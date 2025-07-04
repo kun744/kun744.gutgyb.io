@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이현의 포트폴리오</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #2d2d2d;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #2d2d2d;
+    }
+
+    .projects, .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .card {
+      flex: 1 1 45%;
+      background-color: #eee;
+      padding: 1rem;
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: #2d2d2d;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+
+    a {
+      color: #3366cc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>이현의 포트폴리오</h1>
+    <p>프론트엔드 개발자 | UX/UI 설계자 | 문제 해결을 좋아하는 사람</p>
+  </header>
+
+  <nav>
+    <a href="#about">소개</a>
+    <a href="#projects">프로젝트</a>
+    <a href="#skills">기술</a>
+    <a href="#contact">연락처</a>
+  </nav>
+
+  <section id="about">
+    <h2>👋 자기소개</h2>
+    <div style="display: flex; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap;">
+      <img src="images/profile.jpg" alt="이현 프로필 사진" style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%; border: 2px solid #ccc;" />
+      <div>
+        <p>
+          안녕하세요! 저는 서울 출신의 웹 개발자 <strong>이현</strong>입니다. 대학에서 컴퓨터공학을 전공한 후, 다양한 스타트업과 프리랜서 경험을 통해 실전 감각을 키웠습니다.
+          사용자 중심의 직관적인 UI를 설계하고 구현하는 데에 큰 즐거움을 느끼며, 협업과 커뮤니케이션도 중요하게 생각합니다.
+        </p>
+        <ul>
+          <li><strong>이름:</strong> 이현 (Hyun Lee)</li>
+          <li><strong>생년월일:</strong> 1994년 3월 12일</li>
+          <li><strong>거주지:</strong> 서울시 마포구</li>
+          <li><strong>학력:</strong> 한양대학교 컴퓨터공학과 졸업</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>🛠️ 프로젝트</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>포트폴리오 웹사이트</h3>
+        <p>HTML/CSS와 순수 JavaScript로 제작한 반응형 자기소개 사이트입니다.</p>
+      </div>
+      <div class="card">
+        <h3>일정 관리 앱 (PlanMate)</h3>
+        <p>React와 Firebase를 활용해 만든 개인 일정 관리 앱입니다. 로그인 기능과 캘린더 연동 지원.</p>
+      </div>
+      <div class="card">
+        <h3>AI 질문 응답 챗봇</h3>
+        <p>OpenAI API를 활용한 FAQ 챗봇. 기업 고객 웹사이트에 적용한 프로젝트 경험 포함.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>💡 기술 스택</h2>
+    <div class="skills">
+      <div class="card">
+        <h4>Frontend</h4>
+        <p>HTML, CSS, JavaScript, React, Vue.js, TypeScript</p>
+      </div>
+      <div class="card">
+        <h4>Backend & DevOps</h4>
+        <p>Node.js, Express, Firebase, MongoDB, Git, Docker</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📬 연락처</h2>
+    <p><strong>이메일:</strong> hyun.lee.dev@gmail.com</p>
+    <p><strong>전화번호:</strong> 010-1234-5678</p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/hyunlee-dev" target="_blank">github.com/hyunlee-dev</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/hyunlee" target="_blank">linkedin.com/in/hyunlee</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 이현. 모든 권리 보유.</p>
+  </footer>
+
+</body>
+</html>
